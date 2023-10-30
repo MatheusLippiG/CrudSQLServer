@@ -35,8 +35,8 @@ namespace DapperCrud
         static void CreateUser(SqlConnection connection)
         {
             var user = new User();
-            user.Name = "Vilma";
-            user.Email = "Vilma@gmail.com";
+            user.Name = "xxxxxxx";
+            user.Email = "xxxxxxxxxx@gmail.com";
             user.PasswordHash = "HASH";
             user.Adress = "Street xxxx";
             user.Premium = false;
@@ -67,9 +67,9 @@ namespace DapperCrud
             var rows = connection.Execute(updateQuery, new
             {
                 id = 2,
-                name = "Vilma"
+                name = "xxxxxx"
             });
-            Console.WriteLine("User updated!");
+            Console.WriteLine("User updated");
         }
 
         static void DeleteUser(SqlConnection connection)
@@ -85,15 +85,15 @@ namespace DapperCrud
         static void CreateManyUser(SqlConnection connection)
         {
             var user = new User();
-            user.Name = "Nathalia";
-            user.Email = "Nathalia@gmail.com";
+            user.Name = "xxxxxx";
+            user.Email = "xxxxxxxa@gmail.com";
             user.PasswordHash = "HASH";
             user.Adress = "Street xxxxxxxxxx";
             user.Premium = false;
 
             var user2 = new User();
-            user2.Name = "Pedro";
-            user2.Email = "Pedro@gmail.com";
+            user2.Name = "xxxxxx";
+            user2.Email = "xxxxxx@gmail.com";
             user2.PasswordHash = "HASH";
             user2.Adress = "Street xxxxxxx";
             user2.Premium = false;
